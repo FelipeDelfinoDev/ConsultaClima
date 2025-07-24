@@ -1,3 +1,5 @@
+const appid: string = process.env.APPID as string;
+
 const form = document.querySelector("#pesquisa-form > form");
 const input: HTMLInputElement | null =
   document.querySelector("#input-localizacao");
@@ -18,7 +20,7 @@ form?.addEventListener("submit", async (e) => {
 
   try {
     const resposta = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=00f61f25ce1310eea5718ed3afe39014&lang=pt_br&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=${appid}&lang=pt_br&units=metric`
     );
     const dados = await resposta.json();
 

@@ -1,0 +1,30 @@
+
+.env
+
+
+node_modules/
+
+
+dist/
+build/
+.vite/
+.parcel-cache/
+.next/ # Para projetos Next.js
+
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+.DS_Store # macOS
+.vscode/ # Visual Studio Code
+
+
+
+coverage/
+
+
+*.swp
+*.swo
