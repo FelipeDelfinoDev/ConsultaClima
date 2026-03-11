@@ -16,7 +16,6 @@ Esta é uma aplicação web simples que permite aos usuários verificar a temper
 Esta aplicação se conecta à **API OpenWeatherMap** para buscar os dados do clima.
 
 - Para usar esta aplicação ou desenvolver com ela, você pode obter sua própria chave de API gratuita registrando-se no site da [OpenWeatherMap](https://openweathermap.org/api).
-- Após obter sua chave, você pode substituir a chave existente no arquivo TypeScript (`src/index.ts`) pela sua própria.
-
+- Após obter sua chave, você pode substituir a chave no arquivo TypeScript (`src/index.ts`) pela sua própria ou criar um arquivo .env e copiar o .env.example e trocar pela sua chave api.
 
 ---
