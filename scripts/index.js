@@ -8,6 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+const appid = process.env.APPID;
 const form = document.querySelector("#pesquisa-form > form");
 const input = document.querySelector("#input-localizacao");
 const sectionInfos = document.querySelector("#tempo-info");
@@ -22,7 +23,7 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (e) 
         return;
     }
     try {
-        const resposta = yield fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=00f61f25ce1310eea5718ed3afe39014&lang=pt_br&units=metric`);
+        const resposta = yield fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=${appid}&lang=pt_br&units=metric`);
         const dados = yield resposta.json();
         const infos = {
             temperatura: Math.round(dados.main.temp),
